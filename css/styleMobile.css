@@ -1,0 +1,262 @@
+*{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+ul, li {
+    list-style-type: none;
+}
+nav{
+    display: block;
+    background-color: #7E459B;
+    text-align: center;
+}
+.nav_logo{
+    width: 55%;
+    height: 80%;
+    align-items: center;
+    padding: 10px;
+}
+.nav_lista{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    /*text-transform: uppercase;*/
+    color: white;
+    margin: 0;
+}
+.titulos{
+    text-transform: uppercase;
+    color: #7E459B;
+}
+.subtitulos{
+    margin: 10px 3px 0 0;
+    color: #7E459B;
+    font-weight: 100;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.descricao_foto{
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+.descricao_foto-img{
+    width: 100%;
+    height:auto%;
+    border-radius: 60%;
+    border: 10px solid #7E459B;
+    margin-top:8%;
+}
+.descricao_texto{
+    margin: 30px 0 auto;
+}
+.cursos_conteudo{
+    width: 70%;
+    background-color: #C199CA;
+    border-radius: 4%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cursos_conteudo-img{
+    width: 50%;
+}
+.cursos_conteudo-titulo{
+    font-size:200%;
+}
+.btn1, .btn2, .btn3{
+    background-color: #7E459B;
+    width: 50%;
+    height: 45px;
+    text-transform: uppercase;
+    border-radius: 200px;
+    padding: 5px;
+    border: none;
+    font-size:25px;
+}
+.footer{
+    display:  block;
+    margin-bottom: 40px;
+}
+.footer_img{
+    width:10%;
+}
+.footer_principal{
+    display: flex;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.footer_principal-img{
+    width: 30%;
+}
+.footer_principal-title{
+    font-size: 2rem;
+    color: #7E459B;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.footer_secundario{
+    margin-top: 30px;
+    text-align: center;
+    background-color: #7E459B;
+    height: 20%;
+    color: white;
+}
+.footer_secundario-title{
+    color: white;
+    text-decoration: none;
+    margin-left:-13%;
+}
+/*Transformando de Mobile para desktop*/
+/* Quando a resolução da tela tiver no mínimo 1080 pixels e no maximo 2010 px, o código abaixo é executado */
+@media(min-width:1080px) and (max-width:2010px){
+    nav{
+        display: flex;
+        font-size: 250%;
+    }
+    .nav_logo{
+        margin-bottom:10px;
+        margin-top:10px;
+        margin-left:30px;
+        width:93%;
+        height:54%;
+    }
+    .descricao{
+        display: flex;
+        /*justify-content: space-between;*/
+    }
+    .descricao_texto{
+        width:70%;
+        margin: 100px 0 auto;
+        margin-left: 120px;
+    }
+    .descricao_titulo{
+        margin-bottom:40px;
+        font-size: 250%;
+    }
+    .descricao_subtitle{
+        font-size: 183%;
+    }
+    .cursos{
+        display:flex;
+        margin-top: 7%;
+    }
+    .cursos_conteudo{
+        width:28%;
+    }
+    .cursos_conteudo-subtitulo{
+        padding:10%;
+        font-size:25px;
+    }
+    .btn1{
+        margin-top:5%;
+    }
+    .btn3{
+        margin-top:15%;
+    }
+    /*Tirando "The future is female da versão desktop*/
+    .footer_principal{
+        display: none;
+    }
+    .footer_secundario{
+        display:flex;
+        /*justify-content:space-evenly;*/
+        margin-top:13%;
+        padding:2%;
+        font-size:150%;
+    }
+    .footer_secundario-link{
+        margin-left:-182px
+    }
+    .footer_secundario-title{
+        margin-left:-13%;
+    }
+}
+
+/*Ajustando para a versão tablet - 768 pixels*/
+@media(min-width:700px) and (max-width:1080px){
+    nav{
+        display: flex;
+    }
+    .nav_logo{
+        margin-bottom:10px;
+        margin-top:10px;
+        width:71%;
+        height:52%;
+    }
+    .nav_lista{
+        font-size:20px;
+    }
+    .descricao{
+        display: flex;
+    }
+    .descricao_foto-img{
+        border: 6px solid #7E459B;
+        width: 130%;
+    }
+    .descricao_titulo{
+        margin-left:80px;
+        margin-top:5%;
+        font-size:20px;
+    }
+    .descricao_subtitle{
+        margin-left:80px;
+        margin-top:3%;
+    }
+    .cursos{
+        display:flex;
+    }
+    .cursos_conteudo{
+        width:25%;
+        border-radius: 5%;
+        font-size: 75%;
+    }    
+    .btn1, .btn2, .btn3{
+        font-size:10px;
+        height:10%;
+    }
+    .btn1{
+        margin-top:10%;
+    }
+    .btn2{
+        margin-top:13%;
+    }
+    .btn3{
+        margin-top:29%;
+    }
+    .footer_principal{
+        display: none;
+    }
+    .footer_secundario{
+        display:flex;
+        font-size:12px;
+    }
+}
+/*Ajustando para a versão tablet - 768 pixels*/
+@media(min-width:200px) and (max-width:700px){
+    .descricao_foto-img{
+        margin-left: 10%;
+    }
+    .nav_lista{
+        margin-left:-23px;
+    }
+    .btn1, .btn2, .btn3{
+        font-size:10px;
+        height:10%;
+        margin-top:5%;
+    }
+    .footer_principal-title{
+        font-size:150%;
+        text-align:center;
+    }
+    .descricao_foto-img{
+        margin-left:-4%;
+    }
+}
